@@ -56,3 +56,10 @@ from functools import reduce
 l1 = [1,2,3,4,5,6,7,8,9]
 result = reduce(lambda x,y : x+y ,l1)
 print(result)
+
+# Factorial of number
+num = 5
+fact = 1
+for i in range(1,num+1):
+    fact = fact * i
+print(f"Factorial of {num} is {fact}")
