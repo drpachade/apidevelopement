@@ -63,3 +63,16 @@ fact = 1
 for i in range(1,num+1):
     fact = fact * i
 print(f"Factorial of {num} is {fact}")
+
+#Difference Between the content of List
+
+l10 = [1,3,5,7,9,10,11,13]
+target = [2,-2]
+count = 0
+for i in range(0,len(l10)):
+    for j in range(i+1,len(l10)):
+        c = l10[i] - l10[j]
+        if c in target:
+            count += 1
+            print("Pair Found",l10[i],l10[j])
+print("Counter",count)
