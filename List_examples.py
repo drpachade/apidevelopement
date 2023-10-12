@@ -76,3 +76,24 @@ for i in range(0,len(l10)):
             count += 1
             print("Pair Found",l10[i],l10[j])
 print("Counter",count)
+
+# List Comprehension
+#1)
+numbers = [2, 5, 3, 7] 
+square = [n**2 for n in numbers] 
+print(square)
+
+#2)
+numbers_list = [x for x in range(1,101) 
+if x % 2 == 0 if x % 5 == 0] 
+print(numbers_list)
+
+#3)
+transposedmatrix = [] 
+matrix = [[1, 2, 3, 4], [4, 5, 6, 8]] 
+for i in range(len(matrix [0])):
+    transposedmatrix_row = [] 
+    for row in matrix:
+        transposedmatrix_row.append(row[i])
+        transposedmatrix.append(transposedmatrix_row)
+print(transposedmatrix)
